@@ -249,7 +249,7 @@ def read_from_file(path=""):
     if path == "":
         path = get_browse_dialog(dlg_type=1)
     if xbmcvfs.exists(path):
-        f = open(path)
+        f = xbmcvfs.File(path)
         fc = simplejson.load(f)
         log("loaded textfile " + path)
         return fc
