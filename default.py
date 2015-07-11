@@ -8,7 +8,7 @@ ADDON = xbmcaddon.Addon()
 ADDON_VERSION = ADDON.getAddonInfo('version')
 ADDON_LANGUAGE = ADDON.getLocalizedString
 ADDON_PATH = ADDON.getAddonInfo('path').decode("utf-8")
-EXTRAFANART_LIMIT = 4
+EXTRAFANART_LIMIT = 10
 EXTRATHUMB_LIMIT = 4
 HOME = xbmcgui.Window(10000)
 sys.path.append(xbmc.translatePath(os.path.join(ADDON_PATH, 'resources', 'lib')))
